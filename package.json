@@ -1,0 +1,28 @@
+{
+  "name": "boobies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && yarn run -s serve || yarn run -s dev",
+    "build": "preact build",
+    "serve": "preact build && preact serve",
+    "dev": "preact watch",
+    "test": "eslint src && preact test"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-synacor": "^1.0.1",
+    "if-env": "^1.0.0",
+    "preact-cli": "^1.4.1",
+    "prettier": "^1.5.3"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "preact": "^8.2.1",
+    "react-github-corner": "^0.3.0",
+    "react-scrollable-anchor": "^0.4.2",
+    "react-social-icons": "^2.7.0",
+    "tachyons": "^4.7.4"
+  }
+}
